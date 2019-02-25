@@ -1,0 +1,11 @@
+List of relevant commands
+=========================
+To check if instance is running and its corresponding public IP address
+	c> aws ec2 describe-instances --query "Reservations[].Instances[].[InstanceId,State,PublicIpAddress]"
+
+To start an instance
+	c> aws ec2 start-instances --instance-ids "xxxxxx"
+
+To stop an instance
+	c> aws ec2 stop-instances --instance-ids "xxxxxx"
+
